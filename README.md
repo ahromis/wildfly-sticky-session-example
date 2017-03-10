@@ -51,7 +51,7 @@ Otherwise, the connection will close base upon on the `connectionTimeout` settin
     1. `docker secret create cert.pem cert.pem`
     2. `docker secret create key.pem key.pem`
     3. `docker secret create chain.pem chain.pem`
-    4. `docker service create --secret source=key.pem,target=key.pem --secret source=chain.pem,target=chain.pem --secret source=cert.pem,target=cert.pem -p 8443 --network lbinfo --replicas 3 --name ssl-test ahromis/lbinfo:tomcat-ssl
+    4. `docker service create --secret source=key.pem,target=key.pem --secret source=chain.pem,target=chain.pem --secret source=cert.pem,target=cert.pem -p 8443 --network lbinfo --replicas 3 --name ssl-test ahromis/lbinfo:tomcat-ssl`
 
     ####Using UCP HRM:
 
