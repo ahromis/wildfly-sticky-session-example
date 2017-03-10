@@ -16,6 +16,8 @@ response.setHeader("Connection", "close");
 
 Otherwise, the connection will close base upon on the `connectionTimeout` setting in your `server.xml` (for Tomcat). For the tomcat-ssl `Dockerfile` connections aren't forcibly closed to showcase re-using the connections for improved performance.
 
+Credit goes to hasalex for creating the Java code and maven build process in this repo.
+
 # Usage
 
 1. ##Build the project with Maven
