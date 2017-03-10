@@ -59,4 +59,4 @@ Otherwise, the connection will close base upon on the `connectionTimeout` settin
 
     ####Using UCP HRM with TLS:
 
-    * `docker service create --secret source=key.pem,target=key.pem --secret source=chain.pem,target=chain.pem --secret source=cert.pem,target=cert.pem -l com.docker.ucp.mesh.http=external_route=sni://ssl.hromis.dckr.org,internal_port=8443 -p 8443 --network ucp-hrm --replicas 3 --name ssl-test ahromis/lbinfo:tomcat-ssl
+    * `docker service create --secret source=key.pem,target=key.pem --secret source=chain.pem,target=chain.pem --secret source=cert.pem,target=cert.pem -l com.docker.ucp.mesh.http=external_route=sni://ssl.hromis.dckr.org,internal_port=8443 -p 8443 --network ucp-hrm --replicas 3 --name ssl-test ahromis/lbinfo:tomcat-ssl`
