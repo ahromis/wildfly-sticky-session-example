@@ -33,7 +33,8 @@ Otherwise, the connection will close base upon on the `connectionTimeout` settin
     ####Building for TLS
 
     1. `cp src/main/webapp/index-ssl.jsp src/main/webapp/index.jsp`
-    2. `docker build --rm -f Dockerfile.tomcat-ssl -t ahromis/lbinfo:tomcat-ssl .`
+    2. Rebuild the war
+    3. `docker build --rm -f Dockerfile.tomcat-ssl -t ahromis/lbinfo:tomcat-ssl .`
 
 3. ##Running the image
 
