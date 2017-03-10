@@ -27,13 +27,13 @@ Otherwise, the connection will close base upon on the `connectionTimeout` settin
 
     Any of these will work depending on which application server you wish to use, or if you want to enable SSL.
 
-    * `docker build --rm -f Dockerfile.tomcat -t ahromis/lbinfo:tomcat`
-    * `docker build --rm -f Dockerfile.wildfly -t ahromis/lbinfo:wildfly`
+    * `docker build --rm -f Dockerfile.tomcat -t ahromis/lbinfo:tomcat .`
+    * `docker build --rm -f Dockerfile.wildfly -t ahromis/lbinfo:wildfly .`
 
     ####Building for TLS
 
     1. `cp src/main/webapp/index-ssl.jsp src/main/webapp/index.jsp`
-    2. `docker build --rm -f Dockerfile.tomcat-ssl -t ahromis/lbinfo:tomcat-ssl`
+    2. `docker build --rm -f Dockerfile.tomcat-ssl -t ahromis/lbinfo:tomcat-ssl .`
 
 3. ##Running the image
 
