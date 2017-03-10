@@ -16,9 +16,6 @@ body {
 <p><b>HTTP Host header = <%=request.getHeader("Host") %></b></p>
 <p><b>JSESSIONID = <%= session.getId() %></b></p>
 <p><b>Hostname = <%=request.getLocalName() %></b></p>
-<%
-response.setHeader("Connection", "close");
-%>
 </body>
 </html>
 <script lang="javascript">
